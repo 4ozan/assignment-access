@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Admin Dashboard - Hospital Management System</title>
+    <title>Receptionist Dashboard - Hospital Management System</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gradient-to-br from-blue-600 via-teal-500 to-green-500 min-h-screen flex items-center justify-center">
     <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
-        <h2 class="text-2xl font-bold mb-6 text-center text-blue-700">Administrator Dashboard</h2>
-        <h3 class="text-lg font-semibold text-green-600 text-center mb-4">Full Hospital System Access</h3>
+        <h2 class="text-2xl font-bold mb-6 text-center text-blue-700">Receptionist Dashboard</h2>
+        <h3 class="text-lg font-semibold text-green-600 text-center mb-4">Patient Registration Access</h3>
         <div class="bg-blue-50 p-4 rounded-lg mb-4">
-            <h4 class="font-semibold text-blue-800 mb-2">Your Access Capabilities:</h4>
+            <h4 class="font-semibold text-blue-800 mb-2">Your Registration Capabilities:</h4>
             <ul class="list-disc list-inside text-gray-700 space-y-1">
                 {% for perm in permissions %}
                     <li>{{ perm }}</li>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospital Management System - Welcome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-blue-600 via-teal-500 to-green-500 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-white/10 backdrop-blur-md p-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-white text-2xl font-bold">
+                <i class="fas fa-hospital mr-2"></i>MediCare HMS
+            </div>
+            <a href="{{ url_for('login') }}" class="bg-white text-blue-600 px-6 py-2 rounded-lg hover:bg-gray-100 transition">
+                Sign In
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="max-w-7xl mx-auto px-4 py-16">
+        <div class="text-center text-white mb-16">
+            <h1 class="text-5xl font-bold mb-6">Hospital Management System</h1>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">
+                Streamline healthcare operations with our comprehensive role-based access control system. 
+                Manage patients, staff, and resources efficiently across all departments.
+            </p>
+            <a href="{{ url_for('login') }}" class="bg-white text-blue-600 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-100 transition">
+                Get Started
+            </a>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+            <div class="bg-white/10 backdrop-blur-md p-6 rounded-lg text-white">
+                <div class="text-3xl mb-4 text-center">
+                    <i class="fas fa-user-md"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-center">Doctor Access</h3>
+                <p class="text-center">Manage patient records, create treatment plans, and prescribe medications with full medical access.</p>
+            </div>
+            
+            <div class="bg-white/10 backdrop-blur-md p-6 rounded-lg text-white">
+                <div class="text-3xl mb-4 text-center">
+                    <i class="fas fa-user-nurse"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-center">Nurse Care</h3>
+                <p class="text-center">Monitor patient care, update medication logs, and manage care schedules efficiently.</p>
+            </div>
+            
+            <div class="bg-white/10 backdrop-blur-md p-6 rounded-lg text-white">
+                <div class="text-3xl mb-4 text-center">
+                    <i class="fas fa-clipboard-list"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-center">Reception</h3>
+                <p class="text-center">Register patients, manage appointments, and process insurance forms seamlessly.</p>
+            </div>
+            
+            <div class="bg-white/10 backdrop-blur-md p-6 rounded-lg text-white">
+                <div class="text-3xl mb-4 text-center">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-center">Admin Control</h3>
+                <p class="text-center">Full system management with staff control, reports, and financial data access.</p>
+            </div>
+        </div>
+
+        <!-- Role Information -->
+        <div class="bg-white/10 backdrop-blur-md p-8 rounded-lg text-white">
+            <h2 class="text-3xl font-bold mb-6 text-center">Role-Based Access Control</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-4">
+                <div class="text-center p-4 bg-white/5 rounded">
+                    <h4 class="font-semibold mb-2">Administrator</h4>
+                    <p class="text-sm">Full system access</p>
+                </div>
+                <div class="text-center p-4 bg-white/5 rounded">
+                    <h4 class="font-semibold mb-2">Doctor</h4>
+                    <p class="text-sm">Medical records access</p>
+                </div>
+                <div class="text-center p-4 bg-white/5 rounded">
+                    <h4 class="font-semibold mb-2">Nurse</h4>
+                    <p class="text-sm">Patient care access</p>
+                </div>
+                <div class="text-center p-4 bg-white/5 rounded">
+                    <h4 class="font-semibold mb-2">Receptionist</h4>
+                    <p class="text-sm">Registration access</p>
+                </div>
+                <div class="text-center p-4 bg-white/5 rounded">
+                    <h4 class="font-semibold mb-2">Guest</h4>
+                    <p class="text-sm">Public information</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white/10 backdrop-blur-md p-6 mt-16">
+        <div class="max-w-7xl mx-auto text-center text-white">
+            <p>&copy; 2024 MediCare Hospital Management System. All rights reserved.</p>
+            <p class="mt-2 text-sm">Secure • Reliable • Efficient</p>
+        </div>
+    </footer>
+</body>
+</html> 
