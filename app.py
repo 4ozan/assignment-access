@@ -29,8 +29,9 @@ def login():
     if request.method == 'POST':
         username = request.form.get('username')
         password = request.form.get('password')
+        selected_role = request.form.get('role')
         user = USERS.get(username)
-        if user and user[0] == password:
+        if user and user[0] == password and user[1] == selected_role:
             session['role'] = user[1]
             return redirect(url_for(f"{user[1]}_page"))
         else:
